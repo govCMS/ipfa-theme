@@ -12,7 +12,7 @@
   <div class="header__inner">
     <?php if ($logo): ?>
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="header__logo" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" class="header__logo-image" /></a>
-        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="header__logo mobile" id="logo-mobile"><img src="/sites/all/themes/custom/ipfa/logo-mobile.svg" alt="<?php print t('Home'); ?>" class="header__logo-image" /></a>
+        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="header__logo mobile" id="logo-mobile"><img src="<?php print $mobile_logo ?>" alt="<?php print t('Home'); ?>" class="header__logo-image" /></a>
   <?php endif; ?>
     <div class="menu-toggle">
       <span></span>
@@ -62,7 +62,7 @@
   </div>
   <div class="footer">
     <div class="footer__inner">
-      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="footer__logo"><img src="/sites/all/themes/custom/ipfa/logo-mobile.svg" alt="<?php print t('Home'); ?>" class="footer__logo-image" /></a>
+      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="footer__logo"><img src="<?php print $mobile_logo ?>" alt="<?php print t('Home'); ?>" class="footer__logo-image" /></a>
       <?php print render($page['footer']); ?>
     </div>
   </div>

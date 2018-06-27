@@ -31,6 +31,7 @@ function ipfa_form_alter(&$form, &$form_state, $form_id) {
  * Implements hook_preprocess_page().
  */
 function ipfa_preprocess_page(&$variables) {
+  $variables['mobile_logo'] = base_path() . drupal_get_path('theme', 'ipfa') . '/logo-mobile.svg';
 }
 
 /**
