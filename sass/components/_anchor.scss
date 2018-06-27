@@ -1,0 +1,15 @@
+a.anchor {
+  color: $secondary-text;
+  text-decoration: none;
+  // Hide anchor links by default.
+  display: none;
+}
+
+h1,
+h2,
+h3 {
+  // Show anchor link on hover to authenticated users.
+  .logged-in &:hover a.anchor {
+    display: inline-block;
+  }
+}

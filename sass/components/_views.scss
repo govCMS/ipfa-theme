@@ -1,0 +1,19 @@
+// Layout.
+.pane-views-panes {
+  margin-top: 30px;
+}
+
+// Views more link.
+div.more-link {
+  margin-top: 40px;
+  text-align: center;
+  a {
+    @include cta-button();
+  }
+}
+// CTA button added manually to view footer.
+.view-footer {
+  a.cta.button {
+    margin-top: 40px;
+  }
+}

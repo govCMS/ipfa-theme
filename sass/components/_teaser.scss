@@ -1,0 +1,7 @@
+// Teaser view mode.
+.view-mode-teaser,
+.node-teaser {
+  @include view-mode-teaser();
+  @include view-mode();
+  @include clearfix();
+}

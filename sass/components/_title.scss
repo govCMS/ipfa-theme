@@ -1,0 +1,9 @@
+// Title view mode.
+.view-mode-title {
+  @include view-mode();
+  @extend %flow-body;
+  .field-name-title {
+    padding: 0 0;
+    font-family: $font-body;
+  }
+}

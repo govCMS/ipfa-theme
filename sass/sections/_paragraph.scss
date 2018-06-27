@@ -1,0 +1,45 @@
+.cp-soft {
+  background: $color-tertiary-light;
+}
+
+.cp-loud {
+  background: $color-primary;
+  color: #fff;
+  .content {
+    background-image: url('../images/backgrounds/heading-carets.png');
+    background-position: 100% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  h2 {
+    color: #fff;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  a {
+    color: rgba(255, 255, 255, 0.8);
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.eb-image {
+  background-repeat: no-repeat;
+  background-size: cover;
+  &.eb-image-repeat {
+    background-repeat: repeat;
+    background-size: auto;
+  }
+}
+
+.paragraphs-item-node-list {
+  @include zen-grid-container();
+  padding: rhythm(1) 0;
+}
+
+.region-side {
+  .field-name-field-para-items-bean {
+    padding: 0 rhythm(0.5);
+  }
+}

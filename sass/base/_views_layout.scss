@@ -1,0 +1,52 @@
+// Number of columns in node lists.
+.view {
+  &[class*="view-layout--"] {
+    .view-content {
+      @include bp-nq($medium) {
+        -js-display: flex;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -#{$zen-gutter-width};
+        .views-row {
+          @include bp-nq($medium) {
+            margin-top: $zen-gutter-width;
+            padding: 0 $zen-gutter-width;
+          }
+        }
+      }
+    }
+  }
+
+  &.view-layout--full {
+    .views-row {
+      @include bp-nq($medium) {
+        width: 100%;
+      }
+    }
+  }
+
+  &.view-layout--halves {
+    .views-row {
+      @include bp-nq($medium) {
+        width: calc(100 / 2 * 1%);
+      }
+    }
+  }
+
+  &.view-layout--thirds {
+    .views-row {
+      @include bp-nq($medium) {
+        width: calc(100 / 3 * 1%);
+      }
+    }
+  }
+
+  &.view-layout--quarters {
+    .views-row {
+      @include bp-nq($medium) {
+        padding: 0 $zen-gutter-width;
+        width: calc(100 / 4 * 1%);
+      }
+    }
+  }
+}

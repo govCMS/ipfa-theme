@@ -1,0 +1,57 @@
+.view-mode-business_card {
+  @include view-mode();
+  @extend %flow-body;
+  @include card();
+  -js-display: flex;
+  display: flex;
+  flex-direction: column;
+  @include bp-nq($medium) {
+    margin: 0 auto;
+    max-width: 550px;
+    flex-direction: row;
+  }
+  // Fields.
+  h3 {
+    text-transform: uppercase;
+  }
+  .field-name-field-image img {
+    border: 2px solid $color-primary;
+  }
+  // Info links for all links except title/image.
+  .field:not(.field-name-title):not(.field-type-image) {
+    a {
+      @include info-link();
+    }
+    &:not(:last-child) a {
+      border-bottom: 4px solid $border-color;
+    }
+  }
+  // Layout.
+  .group-left {
+    width: auto;
+    // Make image flush with card.
+    margin: -(rhythm(.5));
+    margin-bottom: 0;
+    padding-bottom: 15px;
+    @include bp-nq($medium) {
+      margin: -(rhythm(.5));
+      margin-right: 0;
+      padding-bottom: 0;
+      padding-right: 15px;
+    }
+  }
+  .group-right {
+    width: auto;
+    -js-display: flex;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    & > * {
+      width: 100%;
+    }
+    .field-name-node-link {
+      // Vertically position at bottom.
+      margin-top: auto;
+    }
+  }
+}

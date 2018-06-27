@@ -1,0 +1,40 @@
+// User tabs.
+.user-tabs.container {
+  position: relative;
+  padding: 0 !important;
+  background: $color-primary;
+}
+
+// Primary tabs.
+.tabs-primary {
+  @include anti-aliasing();
+  margin: 0 auto;
+  padding: 0 $zen-gutter-width/2;
+  @include bp-nq($medium) {
+    padding: 0 $zen-gutter-width;
+  }
+  white-space: normal !important; /* overwrites system.menus.css */
+  // Tabs.
+  .tabs-primary__tab {
+    display: inline-block;
+  }
+  // Tab links.
+  .tabs-primary__tab-link {
+    color: #fff;
+    display: block;
+    padding: rhythm(.5) rhythm(1);
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    box-sizing: border-box;
+    &:hover {
+      color: $color-primary-active;
+    }
+    &.is-active {
+      background: $color-primary-border;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}

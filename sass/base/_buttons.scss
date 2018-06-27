@@ -1,0 +1,63 @@
+@mixin button() {
+  background: $color-highlight;
+  color: $color-highlight-contrast;
+  font-size: 1em;
+  padding: 0.3em 0.5em;
+  border-radius: 3px;
+  @include box-shadow(1px 1px 1px #C9C9C9);
+  &:hover {
+    background: lighten($color-highlight, 10%);
+  }
+  &:active {
+    background: darken($color-highlight, 5%);
+  }
+}
+
+@mixin cta-button() {
+  display: inline-block;
+  font-size: 0.95em;
+  font-weight: bold;
+  text-decoration: none;
+  color: $color-primary-contrast;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+  background: $color-primary-active;
+  display: inline-block;
+  padding: 10px 20px;
+  &:hover {
+    background: darken($color-primary-active, 10%);
+  }
+}
+
+@mixin info-link() {
+  display: block;
+  padding: 5px 0 5px 0;
+  color: $info-text;
+  font-size: 0.85em;
+  text-decoration: none;
+  text-transform: uppercase;
+  // Arrow.
+  padding-left: 15px;
+  background: image-url('icons/info-arrow.svg');
+  background-repeat: no-repeat;
+  background-position: 0 48%;
+  background-size: 6px auto;
+}
+
+a.button.cta {
+  @include cta-button();
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+  text-align: center;
+}
+
+// LinkedIn. ("!important" needed to override ":not" selector in Business Card)
+.field-name-field-social-linkedin a {
+  @include info-link();
+  padding: 10px 0 10px 28px                   !important;
+  background: image-url('icons/linkedin.svg') !important;
+  background-repeat: no-repeat                !important;
+  background-position: 0 46%                  !important;
+  background-size: 20px auto                  !important;
+}

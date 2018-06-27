@@ -1,0 +1,17 @@
+// Tile view mode.
+.view-mode-tile {
+  @include view-mode();
+  min-height: 2em;
+  .field-name-title {
+    @extend %tile-title;
+  }
+  &:hover {
+    img {
+      opacity: 0.9;
+    }
+  }
+}
+
+.list-view-mode-tile {
+  @include columns(4, 6, 2);
+}

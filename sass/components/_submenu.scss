@@ -1,0 +1,86 @@
+.pane-node-field-submenu {
+  background: rgba(255, 255, 255, 1);
+  border-bottom: 4px solid #f2f1f7;
+  // Make container a level down so background full width of screen.
+  max-width: 100% !important;
+  padding: 0 !important;
+
+  // Hide it completely on small screens.
+  @media (max-width: 768px) {
+    display: none;
+  }
+
+  .field-name-field-submenu {
+    @include container;
+    padding: 0 $zen-gutter-width;
+
+    .field-items {
+      -js-display: flex;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: left;
+      margin: 0 rhythm(-0.5);
+
+      .field-item {
+        flex-grow: 1;
+        flex-basis: auto;
+        padding: rhythm(0.5) rhythm(0.5) 0;
+        &:last-child {
+          margin-right: 0;
+        }
+        a {
+          display: inline-block;
+          white-space: nowrap;
+          padding: 7px 0;
+          color: $link-color;
+          font-size: 0.8em;
+          letter-spacing: 0.05em;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-family: $nunito-sans-bold;
+          transition: all 600ms ease-in-out;
+        }
+        a.active,
+        a:hover {
+          color: $active-link-color;
+          box-shadow: 0 4px #ec1c53;
+          transition: all 300ms ease-in-out;
+        }
+      }
+    }
+  }
+
+  // Styling for sticky state.
+  &.js-is-sticky,
+  &.js-is-stuck {
+    background: rgba(255,255,255,.97);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+}
+
+.navbar-horizontal {
+  .pane-node-field-submenu {
+    &.js-is-sticky,
+    &.js-is-stuck {
+      margin-top: 39px;
+    }
+  }
+  &.navbar-tray-open {
+    .pane-node-field-submenu {
+      &.js-is-sticky,
+      &.js-is-stuck {
+        margin-top: 79px;
+      }
+    }
+  }
+}
+
+body.submenu-is-sticky .js-stickybit-parent {
+  padding-top: 55px;
+}

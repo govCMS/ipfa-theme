@@ -1,0 +1,82 @@
+// Accessibility
+//
+// Style guide: 4.0
+
+// Text resize
+//
+// Markup:
+// <div id="block-govcms-text-resize-text-resize" class="block block-govcms-text-resize contextual-links-region first odd">
+// <div class="block__content">
+// <ul class="text-resize">
+// <li>
+// <a href="#" class="font-small">Smaller text</a>
+// </li>
+// <li >
+// <a href="#" class="font-large">Larger text</a>
+// </li>
+// <li >
+// <a href="#" class="reset">Reset text size</a>
+// </li>
+// </ul>
+// </div>
+// </div>
+//
+// Style guide: 4.1
+.text-resize {
+  margin: 0;
+
+  &:before {
+    content: "Change text size:";
+    display: inline-block;
+    line-height: 28.4px;
+    text-align: right;
+    text-indent: 0;
+    vertical-align: bottom;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    @include hide-text;
+    display: inline-block;
+    height: 23px;
+    text-decoration: none;
+    width: 21px;
+
+    &.font-small:before {
+      content: "A";
+      display: block;
+      line-height: 28.4px;
+      text-align: right;
+      text-indent: 0;
+    }
+    &.font-large:before {
+      content: "A";
+      display: block;
+      font-family: $nunito-sans-bold;
+      font-size: 1.5em;
+      text-align: right;
+      text-indent: 0;
+    }
+    &.reset {
+      display: none;
+    }
+  }
+}
+
+/* Text-resize body text */
+body.large-fonts {
+  @include adjust-font-size-to(19px);
+  @include reset-baseline();
+
+  .text-resize {
+    &:before {
+      line-height: 29.4px;
+    }
+    .font-small:before {
+      line-height: 31.4px;
+    }
+  }
+}

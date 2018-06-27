@@ -1,0 +1,84 @@
+// Layout.
+#main .region-top.edgy-region {
+  .cp-feature-left > .content {
+    padding-left: 0;
+  }
+  .cp-feature-right > .content {
+    padding-right: 0;
+  }
+}
+
+// "Zebra" paragraph style.
+.entity-paragraphs-item.cp-zebra .field-items .field-item:nth-child(even) {
+  background-color: $zebra-even-color;
+}
+
+// Feature.
+#main .entity-paragraphs-item.cp-feature > .content {
+  padding: rhythm(4) $zen-gutter-width;
+  text-align: center;
+
+  @include bp-nq($small) {
+    padding: rhythm(4) rhythm(4);
+  }
+
+  @include bp-nq($medium) {
+    padding: rhythm(4) 6em;
+  }
+
+  @include bp-nq($large) {
+    padding: 6.25em 14em;
+  }
+}
+
+// Feature Left.
+#main .entity-paragraphs-item.cp-feature-left > .content {
+  background: image-url('feature-left-bg.png') no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+  background-size: 96%;
+  padding-bottom: 100vw;
+
+  @include bp-nq($small) {
+    background-position-x: 94%;
+    background-position-y: bottom;
+    background-size: 40%;
+    padding: rhythm(4) 25% rhythm(4) $zen-gutter-width;
+  }
+
+  @include bp-nq($medium) {
+    background-position-y: bottom;
+    background-size: 55%;
+    padding: rhythm(4) 45% rhythm(4) $zen-gutter-width;
+
+  }
+  @include bp-nq($large) {
+    background-position-y: top;
+  }
+}
+
+// Feature Right.
+#main .entity-paragraphs-item.cp-feature-right > .content {
+  background: image-url('feature-right-bg.png') no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+  background-size: 96%;
+  padding-bottom: 100vw;
+
+  @include bp-nq($small) {
+    background-position-x: 6%;
+    background-position-y: bottom;
+    background-size: 40%;
+    padding: rhythm(4) $zen-gutter-width rhythm(4) 25%;
+  }
+
+  @include bp-nq($medium) {
+    background-position-y: bottom;
+    background-size: 55%;
+    padding: rhythm(4) $zen-gutter-width rhythm(4) 45%;
+
+  }
+  @include bp-nq($large) {
+    background-position-y: top;
+  }
+}

@@ -1,0 +1,38 @@
+/**
+ * @file
+ * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
+ *
+ * When you turn on CSS aggregation at admin/config/development/performance, all
+ * of these @include files will be combined into a single file.
+ */
+
+/* Libraries. */
+@import "compass";
+@import "breakpoint";
+@import "zen";
+
+/* Core rules that can be used by components. */
+@import "base/variables";
+@import "base/mixins";
+@import "base/*";
+
+/* HTML element (SMACSS base) rules */
+@import "normalize";
+
+/* Component (SMACSS module) rules. */
+@import "components/*";
+
+// Sections - This is where section specific non-modular styles go.
+// You will not find yourself duplicating these styles.
+@import "sections/*";
+
+// Pages – If there needs to be custom styling for a page, it will be here.
+@import "pages/*";
+
+/* Customized third-party CSS */
+// Loaded last because TinyNav needs to happen last.
+// TODO: pull out tinynav state and place in states. Then place vendor stuff first.
+@import "vendor/*";
+
+// Optionally, add your own components here.
+@import "print";

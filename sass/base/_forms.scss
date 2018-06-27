@@ -1,0 +1,173 @@
+// Forms.
+.kss-modifier__example #block-search-api-page-default-search{
+  max-width: 220px;
+}
+// These variables keep form elements the same height.
+$inputHeight: 40px;
+$inputVPadding: 25px;
+$inputHPadding: 15px;
+$borderWidth: 2px;
+$form-border-radius: 0;
+
+// Textareas.
+.form-textarea-wrapper {
+  textarea {
+    min-height: 138px;
+    padding: $inputVPadding $inputHPadding !important;
+    border: solid $borderWidth $color-primary;
+  }
+}
+// Inputs.
+.form-text {
+  height: $inputHeight;
+  padding: $inputVPadding $inputHPadding !important;
+  border: solid $borderWidth $color-primary;
+}
+
+// Buttons.
+input .form-submit,
+button {
+  @include button();
+  text-align: center;
+  border: none;
+  padding: 0 15px;
+  height: $inputHeight;
+}
+
+.form-submit {
+  @include cta-button();
+}
+
+/* Wrapper for a form element (or group of form elements) and its label. */
+.form-item {
+  margin: rhythm(0.5) 0;
+  label {
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 0;
+  }
+
+  /* Pack groups of checkboxes and radio buttons closer together. */
+  .form-checkboxes &,
+  .form-radios & {
+    /* Drupal core uses "0.4em 0". */
+    margin: 0.3em 0;
+  }
+
+  /* Form items in a table. */
+  tr.odd &,
+  tr.even & {
+    margin: 0;
+  }
+
+  /* Highlight the form elements that caused a form submission error. */
+  input.error,
+  textarea.error,
+  select.error {
+    border: 1px solid #c00;
+  }
+
+  /* The descriptive help text (separate from the label). */
+  .description {
+    font-size: 0.85em;
+    padding: rhythm(.5) 0;
+  }
+}
+
+.form-type-radio,
+.form-type-checkbox {
+  .description {
+    margin-left: 2.4em;
+  }
+}
+
+/* The part of the label that indicates a required field. */
+.form-required {
+  color: #c00;
+}
+
+/* Labels for radios and checkboxes. */
+label.option {
+  display: inline;
+  font-weight: normal;
+}
+
+fieldset {
+  margin-bottom: 1em;
+  background: $form-background;
+  legend {
+    background: #fff;
+    color: rgb(75, 75, 75);
+    border-radius: 0;
+    border: 1px solid $form-border;
+    padding: 0 5px;
+    a,
+    a:visited,
+    a:active,
+    a:hover {
+      color: rgb(75, 75, 75);
+    }
+  }
+}
+
+/**
+ * Collapsible fieldsets.
+ *
+ * @see collapse.js
+ */
+.fieldset-legend {
+  html.js .collapsible & {
+    background-image: inline-image("menu-expanded.png");
+    @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+      *background-image: image-url("menu-expanded.png");
+    }
+    background-position: 5px 65%; /* LTR */
+    background-repeat: no-repeat;
+    padding-left: 15px; /* LTR */
+  }
+  html.js .collapsed & {
+    background-image: inline-image("menu-collapsed.png"); /* LTR */
+    @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
+      *background-image: image-url("menu-collapsed.png"); /* LTR */
+    }
+    background-position: 5px 50%; /* LTR */
+  }
+  .summary {
+    color: #999;
+    font-size: 0.9em;
+    margin-left: 0.5em;
+  }
+}
+
+.search-form-widget {
+  input[type="text"] {
+    height: $inputHeight;
+    padding: $inputVPadding $inputVPadding*2;
+    border-radius:$form-border-radius;
+    width: 190px;
+  }
+
+  input[type="submit"] {
+    height: $inputHeight;
+    width: $inputHeight;
+  }
+}
+
+.search-advanced {
+  margin: rhythm(1) 0;
+  legend {
+    padding: rhythm(0.1);
+  }
+}
+
+header {
+  .search-form-widget {
+    input[type="text"] {
+      width: 100%;
+      max-width: 1000px;
+      @include bp-nq($medium) {
+        width: 190px;
+      }
+    }
+  }
+}

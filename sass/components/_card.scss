@@ -1,0 +1,47 @@
+// Card view mode.
+.view-mode-card {
+  @include view-mode();
+  @extend %flow-body;
+  @include card();
+  // Fields.
+  h3 {
+    text-transform: uppercase;
+  }
+  .field-name-field-image img {
+    border: 2px solid $color-primary;
+  }
+  .field-name-field-image {
+    // Image flush with container.
+    margin: -(rhythm(.5));
+    margin-bottom: 10px;
+  }
+  .field-name-field-position {
+    margin-bottom: 10px;
+  }
+  // Info links for all links except title/image.
+  .field:not(.field-name-title):not(.field-type-image) {
+    a {
+      @include info-link();
+    }
+    &:not(:last-child) a {
+      border-bottom: 4px solid $border-color;
+    }
+  }
+  .field-name-node-link {
+    margin-top: auto;
+  }
+  // LinkedIn icon. ("!important" needed to override ":not" selector)
+  .field-name-field-social-linkedin a {
+    padding: 10px 0 10px 28px                   !important;
+    background: image-url('icons/linkedin.svg') !important;
+    background-repeat: no-repeat                !important;
+    background-position: 0 46%                  !important;
+    background-size: 20px auto                  !important;
+    margin-top: auto;
+  }
+}
+
+// Number of columns in node lists.
+.list-view-mode-card {
+  @include columns(3, 3, 2);
+}

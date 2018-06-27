@@ -1,0 +1,83 @@
+// Elements in the Paragraph Top region appear as a "Hero".
+.region-top {
+  @include anti-aliasing();
+  -js-display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 260px;
+  background: $color-primary;
+  color: $color-primary-contrast;
+  // Make full width in "Normal" layout.
+  max-width: none !important;
+  .panel-pane {
+    @include container();
+    // Override _layout.scss.
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  // Front specific.
+  .front & {
+    p.lead-in {
+      font-size: 26px;
+      font-family: $heading-font;
+      line-height: 1em;
+
+      @include bp-nq($medium) {
+        font-size: 55px;
+      }
+    }
+  }
+  // Content.
+  h1,
+  p,
+  a {
+    color: $color-primary-contrast;
+  }
+  strong {
+    font-weight: normal;
+    font-family: inherit;
+    color: $color-primary-active;
+  }
+  .field-name-field-lead {
+    font-size: 1.1em;
+    line-height: 1.5em;
+    @include bp-nq($large) {
+      max-width: 50%;
+    }
+  }
+  a.read-more,
+  .field-name-field-cta-link a {
+    @extend .read-more;
+    display: block;
+    font-size: 1em                 !important;
+    color: $color-primary-contrast !important;
+  }
+  // Cancel default background image of "Feature" paragraph style.
+  .cp-feature-left.eb-image,
+  .cp-feature-right.eb-image {
+    & > .content {
+      background-image: none !important;
+    }
+  }
+  // Replicate "Feature" background image alignment/position behaviour.
+  .cp-feature-left.eb-image,
+  .cp-feature-right.eb-image {
+    background-size: contain;
+    @include bp-nq($small) {
+      background-size: 40%;
+    }
+    @include bp-nq($medium) {
+      background-size: 50%;
+    }
+    @include bp-nq($large) {
+      background-size: contain;
+    }
+  }
+  .cp-feature-left.eb-image {
+    background-position: bottom right;
+  }
+  .cp-feature-right.eb-image {
+    background-position: bottom left;
+  }
+}

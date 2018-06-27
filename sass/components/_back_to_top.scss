@@ -1,0 +1,44 @@
+#back-to-top .back-to-top__link {
+  background: #FFFFFF;
+  border-radius: 100%;
+  display: none;
+  top: -30px;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.25);
+  height: 61px;
+  position: absolute;
+  right: 30px;
+  text-indent: -9999px;
+  width: 61px;
+  z-index: 1000;
+
+  &:before {
+    background: image-url('back-to-top-arrow.svg');
+    content: "";
+    float: right;
+    height: 14px;
+    margin-top: 4px;
+    margin-right: 2px;
+    width: 26px;
+    transition: all 600ms ease-in-out;
+  }
+
+  &:hover:before {
+    margin-top: 2px;
+    transition: all 300ms ease-in-out;
+  }
+
+  &.is-visible {
+    display: block;
+  }
+
+  &.is-fixed {
+    bottom: 30px;
+    position: fixed;
+    top: initial;
+  }
+}
+
+// For positioning to work we need to change parent element position as well.
+.postscript {
+  position: relative;
+}

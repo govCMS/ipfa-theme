@@ -1,0 +1,39 @@
+// Tile wide view mode.
+.view-mode-widetile {
+  @include view-mode();
+  min-height: 2em;
+  text-align: center;
+  // Fields.
+  img {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    // Cancel out $viewmode-basic.
+    width: auto;
+    height: auto;
+  }
+  h3 {
+    font-size: 2.5em;
+    margin: 10px 0;
+  }
+  p {
+    display: inline-block;
+    padding: 0 25px;
+  }
+  .field-name-node-link a {
+    @extend .read-more;
+    font-size: 0.95em;
+    display: inline-block;
+    margin-top: 10px;
+  }
+}
+
+// Number of columns in node lists.
+.list-view-mode-widetile {
+  @include columns(2, 2, 2);
+  // Dividing line.
+  .field-name-field-para-items-node > .field-items > .field-item:first-child {
+    @include bp-nq($medium) {
+      border-right: 4px solid $divider-color;
+    }
+  }
+}

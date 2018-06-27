@@ -1,0 +1,38 @@
+// Center people headings.
+#our-leadership,
+#chief-executive,
+#directors {
+  text-align: center;
+}
+
+// "Chief Executive" and "Managing Directors" paragraphs.
+.paragraphs-item-1305,
+.paragraphs-item-1306 {
+  // Subheadings are smaller and sans serif.
+  h3 {
+    margin: 30px 0 20px 0;
+    font-size: 1em;
+    font-family: $font-body;
+  }
+  // Remove spacing between "Managing Directors" and "View Team" pararaphs.
+  &,
+  .list-view-mode-card {
+    padding-bottom: 0 !important;
+  }
+  // Custom column count for person cards.
+  .list-view-mode-card.grid-12 .field-name-field-para-items-node {
+    > .field-items {
+      justify-content: center;
+      > .field-item {
+        // 4 columns.
+        @include bp-nq($medium) {
+          width: calc(100 / 4 * 1%);
+        }
+        // 5 columns.
+        @include bp-nq($large) {
+          width: calc(100 / 5 * 1%);
+        }
+      }
+    }
+  }
+}

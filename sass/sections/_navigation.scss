@@ -1,0 +1,213 @@
+.region-navigation {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+
+  @include bp-nq($medium) {
+    float: right;
+    margin-top: -2em;
+    width: auto;
+  }
+
+  .block {
+    @include noSpace;
+    @include container;
+  }
+}
+
+// Used for calculation is sub-menu below.
+$firstLiPaddingX: 15px;
+
+/* First-level Menu */
+.region-navigation .block__content > .menu {
+  padding: 0 rhythm(.5);
+
+  > li {
+    @include bp-nq($medium) {
+      float: left;
+      padding: 0 0 0 30px;
+    }
+
+    > a {
+      border-bottom: 3px solid rgba(255,255,255,0);
+      color: $nav-color;
+      display: block;
+      text-decoration: none;
+      font-family: $nunito-sans-bold;
+      text-transform: uppercase;
+      padding: 15px 0;
+      transition: all 300ms ease-in-out;
+    }
+
+    &.active-trail > a {
+      &, & a:hover, & a.active  {
+        border-bottom: 3px solid $nav-active-link-underline;
+        color: $nav-color;
+      }
+    }
+
+    & > a:hover, &.sfHover > a {
+      color: $nav-color;
+      border-bottom: 3px solid $nav-active-link-underline;
+    }
+
+    // Remove border on hover, sfHover, active link, and first link.
+    &.sfHover, &:hover, &.active-trail {
+      &, & + li { // removes this border as well as ajacent border
+      }
+    }
+  }
+  .sf-depth-1 {
+    & > ul {
+      z-index: 200;
+      position: absolute;
+      background: #fff;
+      box-shadow: 1px 1px 5px rgba($color-primary, 0.5);
+      -webkit-box-shadow: 1px 1px 5px rgba($color-primary, 0.5);
+      -moz-box-shadow: 1px 1px 5px rgba($color-primary, 0.5);
+
+      a {
+        //padding-left: 0;
+      }
+    }
+  }
+}
+
+/* Sub-menu */
+$subMenuPadding: 3px;
+$subLiPaddingX: $firstLiPaddingX - $subMenuPadding;
+
+.sf-menu > li > ul {
+  padding: $subMenuPadding;
+  @extend %linksTabbed;
+  // %linksTabbed overrides
+
+  > li {
+    display: block !important;
+    border-top-color: $color-highlight-contrast;
+
+    > a {
+      padding-left: $subLiPaddingX;
+    }
+  }
+}
+
+.user-tabs{
+  .tabs-primary {
+    @include container;
+  }
+}
+
+#block-superfish-1 {
+  width: 100%;
+  padding: 0 rhythm(1);
+  background: $color-primary;
+
+  @include bp-nq($medium) {
+    padding: 0;
+    width: auto;
+  }
+}
+
+//.tinynav {
+//  width: 100%;
+//  margin-bottom: rhythm(0.5);
+//  max-width: 1000px;
+//  margin-top: -2em;
+//
+//  @include bp-nq($medium) {
+//    display: none;
+//  }
+//}
+
+.region-navigation .block__content > .menu.sf-menu {
+  display: none;
+
+  &.open {
+    display: block;
+  }
+
+  @include bp-nq($medium) {
+    display: block;
+  }
+}
+
+// Styling for menu toggle
+.menu-toggle {
+  @include bp-nq($medium) {
+    display: none;
+  }
+}
+
+.menu-toggle {
+  float: right;
+  width: 26px;
+  height: 20px;
+  position: relative;
+  margin: rhythm(1) 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #FFFFFF;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+.menu-toggle span:nth-child(1) {
+  top: 0px;
+}
+
+.menu-toggle span:nth-child(2),.menu-toggle span:nth-child(3) {
+  top: 10px;
+}
+
+.menu-toggle span:nth-child(4) {
+  top: 20px;
+}
+
+.menu-toggle.open span:nth-child(1) {
+  top: 20px;
+  width: 0%;
+  left: 50%;
+}
+
+.menu-toggle.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.menu-toggle.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.menu-toggle.open span:nth-child(4) {
+  top: 10px;
+  width: 0%;
+  left: 50%;
+}

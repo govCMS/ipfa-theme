@@ -1,0 +1,26 @@
+.front {
+  // Center headings.
+  .paragraphs-item-756,
+  .paragraphs-item-1307 {
+    h2 {
+      text-align: center;
+    }
+  }
+
+  // Remove spacing between paragraphs and their "View more" buttons.
+  .paragraphs-item-756,
+  .paragraphs-item-1307 {
+    padding-bottom: 0 !important;
+  }
+  .paragraphs-item-1401,
+  .paragraphs-item-1406 {
+    > .content {
+      padding-top: 0 !important;
+    }
+  }
+  // Hide elements.
+  .page__title,
+  .breadcrumb {
+    display: none;
+  }
+}

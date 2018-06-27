@@ -1,0 +1,137 @@
+// Base styles used by view mode components.
+
+@mixin view-mode() {
+  font-family: $body-text;
+  position: relative;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    @include single-transition(all, .5s, linear)
+  }
+  .field-name-field-image,
+  .field-name-field-bean-image {
+    overflow: hidden;
+  }
+  &:hover {
+    img {
+      @include scale(1.03);
+    }
+  }
+  h3 {
+    margin: 0;
+    color: $color-primary;
+    a {
+      text-decoration: none;
+      &:hover, &:focus {
+        text-decoration: underline;
+      }
+    }
+  }
+  // Date.
+  .field-name-post-date,
+  .field-name-field-news-date,
+  .field-name-field-event-date {
+    color: $info-text;
+    font-size: 16px;
+    font-family: $info-font;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .field-name-field-subtitle {
+    font-family: $body-text;
+    font-size: 0.9em;
+  }
+}
+
+// Used by teaser and compact view modes.
+@mixin view-mode-teaser {
+  padding-bottom: 10px;
+  h3 {
+    font-size: 1.2em;
+    line-height: 1.2;
+    margin: rhythm(1/4) 0 rhythm(1/2);
+    a {
+      color: $color-highlight;
+    }
+  }
+  p {
+    margin: 0;
+  }
+  .field-name-field-event-date {
+    margin: rhythm(1/2) 0 rhythm(1/2);
+  }
+  .field-type-image {
+    @include bp-nq($minor) {
+      float: left;
+      margin-right: 10px;
+    }
+  }
+}
+
+// Used by tile and tile-wide view modes.
+%tile-title {
+  position: absolute;
+  z-index: 99;
+  bottom: 0;
+  left: 0;
+  padding: 0 rhythm(0.5);
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  h3 {
+    font-size: 1em;
+    padding: rhythm(0.2);
+  }
+  a {
+    color: #fff;
+    text-decoration: none;
+    &:hover, &:focus {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+}
+
+%flow-body {
+  .field-name-title {
+    padding: 0 rhythm(0.5);
+  }
+  .field-name-body,
+  .field-name-field-bean-text {
+    padding: rhythm(0.5);
+  }
+  .field-name-field-subtitle,
+  .field-name-field-event-date,
+  .field-name-post-date,
+  .field-name-field-news-date {
+    padding: 0 rhythm(0.5);
+  }
+}
+
+// Used by stack, card and business card view modes.
+@mixin card() {
+  padding: rhythm(.5);
+  box-shadow: 0 2px 34px rgba(0,0,0,.1);
+  // Equal height columns.
+  -js-display: flex;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  // Fields.
+  h3 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+  .field-name-title {
+    // Cancel out $viewmode-basic.
+    padding-left: 0;
+  }
+  .field-name-node-link a {
+    @extend .read-more;
+  }
+}
+
+.view-mode-default {
+  @include view-mode();
+}

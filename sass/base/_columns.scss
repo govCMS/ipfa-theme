@@ -1,0 +1,64 @@
+// Used by each view mode.
+@mixin columns($cols-large: 3, $cols-large-breakout: 3, $cols-medium: 2) {
+  // Node and bean lists.
+  .field-name-field-para-items-node > .field-items,
+  .field-name-field-para-items-bean > .field-items {
+    // All lists.
+    @include bp-nq($medium) {
+      -js-display: flex;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -#{$zen-gutter-width / 2};
+    }
+    // All list items.
+    > .field-item {
+      margin-bottom: rhythm(1.5);
+      @include bp-nq($medium) {
+        padding: 0 $zen-gutter-width / 2;
+      }
+    }
+  }
+  // When paragraph in grid 12.
+  &.grid-12 {
+    .field-name-field-para-items-node > .field-items,
+    .field-name-field-para-items-bean > .field-items {
+      > .field-item {
+        @include bp-nq($medium) {
+          width: calc(100 / #{$cols-large} * 1%);
+        }
+      }
+    }
+  }
+  // When paragraph in a breakout.
+  .edgy-page .paragraph-breakout > &.grid-12 {
+    .field-name-field-para-items-node > .field-items,
+    .field-name-field-para-items-bean > .field-items {
+      > .field-item {
+        @include bp-nq($medium) {
+          width: calc(100 / #{$cols-large-breakout} * 1%);
+        }
+      }
+    }
+  }
+  // When paragraph in a grid 8 or 6.
+  &.grid-8,
+  &.grid-6 {
+    .field-name-field-para-items-node > .field-items,
+    .field-name-field-para-items-bean > .field-items {
+      > .field-item {
+        @include bp-nq($medium) {
+          width: calc(100 / #{$cols-medium} * 1%);
+        }
+      }
+    }
+  }
+  // When paragraph in a grid 4 or 3.
+  &.grid-4,
+  &.grid-3 {
+    @include bp-nq($medium) {
+      // No columns.
+      height: auto;
+      width: calc(100 / 1 * 1%);
+    }
+  }
+}

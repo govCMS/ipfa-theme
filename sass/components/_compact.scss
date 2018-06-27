@@ -1,0 +1,15 @@
+.view-mode-compact {
+  @include view-mode-teaser();
+  @include view-mode();
+  @extend %flow-body;
+  img {
+    width: 50px!important;
+    height: 50px!important;
+  }
+  .field-name-title {
+    padding: 0;
+  }
+  .field-name-body {
+    padding-top: 0;
+  }
+}

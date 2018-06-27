@@ -1,0 +1,63 @@
+.view-mode-big_teaser {
+  -js-display: flex;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 80px 0;
+  @include bp-nq($small) {
+    flex-direction: row;
+  }
+  // Layout.
+  .group-left,
+  .group-right {
+    -js-display: flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .group-left {
+    width: 100%;
+    @include bp-nq($small) {
+      width: 60%;
+    }
+  }
+  .group-right {
+    width: 100%;
+    @include bp-nq($small) {
+      width: 40%;
+      padding-left: 50px;
+    }
+  }
+  // Fields.
+  h3 {
+    font-size: 2.4em;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .field-name-field-lead {
+    @extend .lead-in;
+  }
+  .field-name-body {
+    line-height: 1.5em;
+  }
+  .field-name-node-link {
+    padding-top: 20px;
+    a {
+      @extend .read-more;
+    }
+  }
+}
+
+// When in a "Zebra" paragraph style switch column order.
+.entity-paragraphs-item.cp-zebra .field-items .field-item:nth-child(even) {
+  .view-mode-big_teaser {
+    @include bp-nq($small) {
+      flex-direction: row-reverse;
+    }
+    .group-right {
+      @include bp-nq($small) {
+        padding-left: 0;
+        padding-right: 50px;
+      }
+    }
+  }
+}

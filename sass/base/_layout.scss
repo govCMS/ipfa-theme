@@ -1,0 +1,178 @@
+@mixin container {
+  margin: 0 auto;
+  @include bp-nq($medium) {
+    width: 100%;
+    max-width: 1440px;
+  }
+}
+
+body:not(.page-panels) #main {
+  @include container;
+  padding: 0 $zen-gutter-width/2;
+  @include bp-nq($medium) {
+    padding: 0 $zen-gutter-width;
+  }
+}
+
+// Normal layout.
+.gov-normal-layout {
+  @include zen-grid-container;
+  > div {
+    @include container;
+  }
+  // Add paddings to para with background.
+  .entity-paragraphs-item.eb-image,
+  .entity-paragraphs-item.eb-color,
+  .entity-paragraphs-item.cp-loud,
+  .entity-paragraphs-item.cp-soft {
+    & > .content {
+      padding: rhythm(.5) $zen-gutter-width/2;
+      @include bp-nq($medium) {
+        padding: rhythm(.5) $zen-gutter-width;
+      }
+    }
+  }
+
+  .region-top > .panel-pane {
+    padding: rhythm(.5) $zen-gutter-width/2;
+    @include bp-nq($medium) {
+      padding: rhythm(.5) $zen-gutter-width;
+    }
+  }
+  .region-main,
+  .region-side {
+    margin-bottom: rhythm(1);
+    padding: rhythm(.5) $zen-gutter-width/2;
+    @include bp-nq($medium) {
+      padding: rhythm(.5) $zen-gutter-width;
+    }
+  }
+  @include bp-nq($medium) {
+    // Case 1: Both sidebars.
+    .side1.grid-3 {
+      @include zen-grid-item(3, 10);
+      padding-right: $zen-gutter-width;
+    }
+    .side2.grid-3 {
+      @include zen-grid-item(3, 1);
+      padding-left: $zen-gutter-width;
+    }
+    .grid-6.region-main {
+      @include zen-grid-item(6, 4);
+    }
+    // Case 2: Sidebar1. (on the right)
+    .side1.grid-4 {
+      @include zen-grid-item(4, 9);
+      padding-right: $zen-gutter-width;
+    }
+    .grid-8.region-main-side1 {
+      @include zen-grid-item(8, 1);
+      padding-left: $zen-gutter-width;
+    }
+    // Case 3: Sidebar2. (on the right)
+    .side2.grid-4 {
+      @include zen-grid-item(4, 1);
+      padding-left: $zen-gutter-width;
+    }
+    .grid-8.region-main-side2 {
+      @include zen-grid-item(8, 5);
+      padding-right: $zen-gutter-width;
+    }
+  }
+  > .clearfix {
+    overflow: visible;
+  }
+}
+
+// Edgy layout.
+.gov-edgy-layout {
+  .pane-node-body,
+  .page__title,
+  .pane-node-title,
+  .region-top > .panel-pane,
+  .container,
+  #block-workbench-block {
+    @include container;
+    padding: rhythm(.5) $zen-gutter-width/2;
+
+    @include bp-nq($medium) {
+      padding: rhythm(.5) $zen-gutter-width;
+    }
+  }
+  .entity-paragraphs-item > .content {
+    padding: rhythm(.5) $zen-gutter-width/2;
+
+    @include bp-nq($medium) {
+      padding: rhythm(.5) $zen-gutter-width;
+    }
+  }
+}
+.gov-edgy-layout .edgy-region {
+  // Wrap paragraph content in a container.
+  .entity-paragraphs-item > .content {
+    @include container;
+  }
+  // Full width big teaser node list items (not just the paragraph .content).
+  .entity-paragraphs-item.paragraphs-item-node-list > .content.list-view-mode-big_teaser {
+    // Revert container mixin.
+    max-width: 100%;
+    padding: 0 !important;
+    & > div > .field-items > .field-item {
+      // Make field-item full width.
+      display: block;
+      // Apply container to the view mode instead.
+      & > div {
+        @include container;
+        padding: rhythm(1) $zen-gutter-width/2;
+
+        @include bp-nq($medium) {
+          padding: rhythm(1) $zen-gutter-width;
+        }
+      }
+    }
+  }
+  .entity-paragraphs-item.paragraph-breakout > .content {
+    max-width: 100% !important;
+    padding: rhythm(1) $zen-gutter-width/2;
+    @include bp-nq($medium) {
+      padding: rhythm(1) $zen-gutter-width;
+    }
+  }
+}
+
+// Regions.
+.paragraphs-item-paragraphs-highcharts,
+.region-postscript {
+  @include container;
+  @include clearfix;
+}
+
+// Containers.
+.container {
+  @include zen-grid-container();
+}
+.nested {
+  @include zen-nested-container();
+}
+
+// Clear fixes.
+.clearfix {
+  @include clearfix();
+}
+.paragraphs-item-bean-list {
+  @include clearfix();
+}
+.field-type-entityreference .field-name-field-para-items-node {
+  @include zen-grid-container;
+}
+.field-type-entityreference.field-name-field-para-items-bean > .field-items {
+  margin: 0 -0.7em;
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
