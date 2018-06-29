@@ -7,15 +7,17 @@
 var gulp = require('gulp');
 var compass = require('gulp-compass');
 var sasssrcs = [ './sass/*/*.scss', './sass/*.scss' ];
+var autoprefix = require('gulp-autoprefixer');
 
 gulp.task('compass', function() {
   gulp.src(sasssrcs)
-    .pipe(compass({
-      config_file: './config.rb',
-      css: 'css',
-      sass: 'sass'
-    }))
-    .pipe(gulp.dest('css'));
+      .pipe(compass({
+        config_file: './config.rb',
+        css: 'css',
+        sass: 'sass'
+      }))
+      .pipe(autoprefix('last 2 versions', '> 1%', 'ie 9', 'ie 10'))
+      .pipe(gulp.dest('css'));
 });
 
 gulp.task('watch', function(){

@@ -28,12 +28,12 @@ a.button.cta:hover {
   text-decoration: none;
   text-transform: uppercase;
   padding-left: 15px;
-  background: url('../images/icons/info-arrow.svg?1529045039');
+  background: url('../images/icons/info-arrow.svg?1530110428');
   background-repeat: no-repeat;
   background-position: 0 48%;
   background-size: 6px auto;
   padding: 10px 0 10px 28px                   !important;
-  background: url('../images/icons/linkedin.svg?1529284754') !important;
+  background: url('../images/icons/linkedin.svg?1530110428') !important;
   background-repeat: no-repeat                !important;
   background-position: 0 46%                  !important;
   background-size: 20px auto                  !important;
@@ -136,8 +136,6 @@ body:not(.page-panels) #main {
     margin-right: -100%;
     padding-left: 20px;
     padding-right: 20px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
@@ -150,8 +148,6 @@ body:not(.page-panels) #main {
     margin-right: -25%;
     padding-left: 20px;
     padding-right: 20px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
@@ -164,8 +160,6 @@ body:not(.page-panels) #main {
     margin-right: -75%;
     padding-left: 20px;
     padding-right: 20px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
@@ -177,8 +171,6 @@ body:not(.page-panels) #main {
     margin-right: -100%;
     padding-left: 20px;
     padding-right: 20px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
@@ -191,8 +183,6 @@ body:not(.page-panels) #main {
     margin-right: -66.66667%;
     padding-left: 20px;
     padding-right: 20px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
@@ -205,8 +195,6 @@ body:not(.page-panels) #main {
     margin-right: -33.33333%;
     padding-left: 20px;
     padding-right: 20px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
@@ -219,8 +207,6 @@ body:not(.page-panels) #main {
     margin-right: -100%;
     padding-left: 20px;
     padding-right: 20px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
@@ -234,8 +220,6 @@ body:not(.page-panels) #main {
   margin-right: -100%;
   padding-left: 20px;
   padding-right: 20px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
@@ -248,8 +232,6 @@ body:not(.page-panels) #main {
   margin-right: -25%;
   padding-left: 20px;
   padding-right: 20px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
@@ -262,8 +244,6 @@ body:not(.page-panels) #main {
   margin-right: -75%;
   padding-left: 20px;
   padding-right: 20px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
@@ -275,8 +255,6 @@ body:not(.page-panels) #main {
   margin-right: -100%;
   padding-left: 20px;
   padding-right: 20px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
@@ -289,8 +267,6 @@ body:not(.page-panels) #main {
   margin-right: -66.66667%;
   padding-left: 20px;
   padding-right: 20px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
@@ -303,8 +279,6 @@ body:not(.page-panels) #main {
   margin-right: -33.33333%;
   padding-left: 20px;
   padding-right: 20px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
@@ -317,8 +291,6 @@ body:not(.page-panels) #main {
   margin-right: -100%;
   padding-left: 20px;
   padding-right: 20px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
@@ -528,12 +500,12 @@ a.button.cta:hover {
   text-decoration: none;
   text-transform: uppercase;
   padding-left: 15px;
-  background: url('../images/icons/info-arrow.svg?1529045039');
+  background: url('../images/icons/info-arrow.svg?1530110428');
   background-repeat: no-repeat;
   background-position: 0 48%;
   background-size: 6px auto;
   padding: 10px 0 10px 28px                   !important;
-  background: url('../images/icons/linkedin.svg?1529284754') !important;
+  background: url('../images/icons/linkedin.svg?1530110428') !important;
   background-repeat: no-repeat                !important;
   background-position: 0 46%                  !important;
   background-size: 20px auto                  !important;
@@ -619,8 +591,6 @@ button {
   font-size: 1em;
   padding: 0.3em 0.5em;
   border-radius: 3px;
-  -webkit-box-shadow: 1px 1px 1px #c9c9c9;
-  -moz-box-shadow: 1px 1px 1px #c9c9c9;
   box-shadow: 1px 1px 1px #c9c9c9;
   text-align: center;
   border: none;
@@ -869,8 +839,6 @@ body:not(.page-panels) #main {
     margin-right: -100%;
     padding-left: 20px;
     padding-right: 20px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
@@ -883,8 +851,6 @@ body:not(.page-panels) #main {
     margin-right: -25%;
     padding-left: 20px;
     padding-right: 20px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
@@ -897,8 +863,6 @@ body:not(.page-panels) #main {
     margin-right: -75%;
     padding-left: 20px;
     padding-right: 20px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
@@ -910,8 +874,6 @@ body:not(.page-panels) #main {
     margin-right: -100%;
     padding-left: 20px;
     padding-right: 20px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
@@ -924,8 +886,6 @@ body:not(.page-panels) #main {
     margin-right: -66.66667%;
     padding-left: 20px;
     padding-right: 20px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
@@ -938,8 +898,6 @@ body:not(.page-panels) #main {
     margin-right: -33.33333%;
     padding-left: 20px;
     padding-right: 20px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
@@ -952,8 +910,6 @@ body:not(.page-panels) #main {
     margin-right: -100%;
     padding-left: 20px;
     padding-right: 20px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
@@ -967,8 +923,6 @@ body:not(.page-panels) #main {
   margin-right: -100%;
   padding-left: 20px;
   padding-right: 20px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
@@ -981,8 +935,6 @@ body:not(.page-panels) #main {
   margin-right: -25%;
   padding-left: 20px;
   padding-right: 20px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
@@ -995,8 +947,6 @@ body:not(.page-panels) #main {
   margin-right: -75%;
   padding-left: 20px;
   padding-right: 20px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
@@ -1008,8 +958,6 @@ body:not(.page-panels) #main {
   margin-right: -100%;
   padding-left: 20px;
   padding-right: 20px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
@@ -1022,8 +970,6 @@ body:not(.page-panels) #main {
   margin-right: -66.66667%;
   padding-left: 20px;
   padding-right: 20px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
@@ -1036,8 +982,6 @@ body:not(.page-panels) #main {
   margin-right: -33.33333%;
   padding-left: 20px;
   padding-right: 20px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
@@ -1050,8 +994,6 @@ body:not(.page-panels) #main {
   margin-right: -100%;
   padding-left: 20px;
   padding-right: 20px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
@@ -1261,12 +1203,12 @@ a.button.cta:hover {
   text-decoration: none;
   text-transform: uppercase;
   padding-left: 15px;
-  background: url('../images/icons/info-arrow.svg?1529045039');
+  background: url('../images/icons/info-arrow.svg?1530110428');
   background-repeat: no-repeat;
   background-position: 0 48%;
   background-size: 6px auto;
   padding: 10px 0 10px 28px                   !important;
-  background: url('../images/icons/linkedin.svg?1529284754') !important;
+  background: url('../images/icons/linkedin.svg?1530110428') !important;
   background-repeat: no-repeat                !important;
   background-position: 0 46%                  !important;
   background-size: 20px auto                  !important;
@@ -1369,8 +1311,6 @@ body:not(.page-panels) #main {
     margin-right: -100%;
     padding-left: 20px;
     padding-right: 20px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
@@ -1383,8 +1323,6 @@ body:not(.page-panels) #main {
     margin-right: -25%;
     padding-left: 20px;
     padding-right: 20px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
@@ -1397,8 +1335,6 @@ body:not(.page-panels) #main {
     margin-right: -75%;
     padding-left: 20px;
     padding-right: 20px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
@@ -1410,8 +1346,6 @@ body:not(.page-panels) #main {
     margin-right: -100%;
     padding-left: 20px;
     padding-right: 20px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
@@ -1424,8 +1358,6 @@ body:not(.page-panels) #main {
     margin-right: -66.66667%;
     padding-left: 20px;
     padding-right: 20px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
@@ -1438,8 +1370,6 @@ body:not(.page-panels) #main {
     margin-right: -33.33333%;
     padding-left: 20px;
     padding-right: 20px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
@@ -1452,8 +1382,6 @@ body:not(.page-panels) #main {
     margin-right: -100%;
     padding-left: 20px;
     padding-right: 20px;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
     word-wrap: break-word;
@@ -1467,8 +1395,6 @@ body:not(.page-panels) #main {
   margin-right: -100%;
   padding-left: 20px;
   padding-right: 20px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
@@ -1481,8 +1407,6 @@ body:not(.page-panels) #main {
   margin-right: -25%;
   padding-left: 20px;
   padding-right: 20px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
@@ -1495,8 +1419,6 @@ body:not(.page-panels) #main {
   margin-right: -75%;
   padding-left: 20px;
   padding-right: 20px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
@@ -1508,8 +1430,6 @@ body:not(.page-panels) #main {
   margin-right: -100%;
   padding-left: 20px;
   padding-right: 20px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
@@ -1522,8 +1442,6 @@ body:not(.page-panels) #main {
   margin-right: -66.66667%;
   padding-left: 20px;
   padding-right: 20px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
@@ -1536,8 +1454,6 @@ body:not(.page-panels) #main {
   margin-right: -33.33333%;
   padding-left: 20px;
   padding-right: 20px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
@@ -1550,8 +1466,6 @@ body:not(.page-panels) #main {
   margin-right: -100%;
   padding-left: 20px;
   padding-right: 20px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   word-wrap: break-word;
@@ -1952,9 +1866,6 @@ h6 {
   width: 100%;
   height: auto;
   overflow: hidden;
-  -webkit-transition: all 0.5s linear;
-  -moz-transition: all 0.5s linear;
-  -o-transition: all 0.5s linear;
   transition: all 0.5s linear;
 }
 .view-mode-default .field-name-field-image,
@@ -1962,10 +1873,6 @@ h6 {
   overflow: hidden;
 }
 .view-mode-default:hover img {
-  -webkit-transform: scale(1.03, 1.03);
-  -moz-transform: scale(1.03, 1.03);
-  -ms-transform: scale(1.03, 1.03);
-  -o-transform: scale(1.03, 1.03);
   transform: scale(1.03, 1.03);
 }
 .view-mode-default h3 {
@@ -1994,9 +1901,10 @@ h6 {
 
 @media (min-width: 800px) {
   .view[class*="view-layout--"] .view-content {
-    -js-display: flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin: 0 -40px;
   }
   .lt-ie9 .view[class*="view-layout--"] .view-content .views-row {
@@ -2011,9 +1919,10 @@ h6 {
   }
 }
 .lt-ie9 .view[class*="view-layout--"] .view-content {
-  -js-display: flex;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0 -40px;
 }
 @media (min-width: 800px) {

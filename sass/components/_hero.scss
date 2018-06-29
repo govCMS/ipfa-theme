@@ -1,7 +1,6 @@
 // Elements in the Paragraph Top region appear as a "Hero".
 .region-top {
   @include anti-aliasing();
-  -js-display: flex;
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -5,7 +5,6 @@
   .field-name-field-para-items-bean > .field-items {
     // All lists.
     @include bp-nq($medium) {
-      -js-display: flex;
       display: flex;
       flex-wrap: wrap;
       margin: 0 -#{$zen-gutter-width / 2};
