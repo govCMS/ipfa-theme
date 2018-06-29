@@ -1,42 +1,58 @@
 // Used by user in WYSIWYG.
 #content .icon-item {
-  display: flex;
-  flex-grow: 1;
-  justify-content: center;
   padding: 60px 0;
+
   &:not(:last-child) {
     border-bottom: 4px solid $divider-color;
   }
-  // Layout.
-  & > * {
+
+  @include bp-nq($medium) {
     display: flex;
-    flex-direction: column;
+    flex-grow: 1;
     justify-content: center;
   }
+
+  // Layout.
+  & > * {
+    @include bp-nq($medium) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
   & > *:first-child {
-    align-items: flex-end;
+    @include bp-nq($medium) {
+      align-items: flex-end;
+    }
   }
 
   & > .content {
+    width: 600px;
     max-width: 600px;
   }
+
   // Fields.
   h3 {
     font-size: 2em;
   }
+
   img {
     margin-right: 80px;
     max-width: 150px;
     height: auto;
   }
+
   p.lead-in {
     margin: 0;
     font-size: 1.1em;
   }
+
   ul {
     list-style: none;
     line-height: 1.7em;
     margin-left: 10px;
+
     li::before {
       content: "- ";
       margin-left: -10px;

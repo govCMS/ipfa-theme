@@ -47,7 +47,7 @@
       }
 
       @include bp-nq($large) {
-        width: calc(100/6 * 1%);
+        width: auto;
       }
 
       & > a {
