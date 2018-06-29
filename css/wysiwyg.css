@@ -1970,6 +1970,10 @@ h6 {
   width: calc(100 / 4 * 1%);
 }
 
+.red {
+  color: #eb1e55;
+}
+
 ol {
   list-style-type: decimal;
   margin-left: 19px;
