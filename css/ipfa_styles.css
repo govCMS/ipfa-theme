@@ -2621,7 +2621,7 @@ h3:hover a.anchor {
 #back-to-top .back-to-top__link.is-fixed {
   bottom: 30px;
   position: fixed;
-  top: initial;
+  top: auto;
 }
 
 .postscript {
