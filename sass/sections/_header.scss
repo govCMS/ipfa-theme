@@ -6,11 +6,27 @@
   @include small-screens {
     padding: rhythm(1) rhythm(0.5);
   }
+
   &,
   & a,
   & a:visited {
     color: #fff;
   }
+
+  // Styling for sticky state.
+  &.js-is-sticky {
+    @include bp-nq($medium) {
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);
+      width: 100%;
+      z-index: 1000;
+    }
+  }
+
+  // No sticky header on small screens.
+  @media (max-width: $medium) {
+    position: relative !important;
+  }
+
   // Layout.
   .header__inner {
     @include container;

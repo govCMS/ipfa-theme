@@ -15,20 +15,18 @@
     padding: 0 $zen-gutter-width;
 
     .field-items {
-      -js-display: flex;
       display: flex;
       flex-wrap: wrap;
-      flex-direction: row;
-      justify-content: left;
+      justify-content: center;
       margin: 0 rhythm(-0.5);
 
       .field-item {
-        flex-grow: 1;
-        flex-basis: auto;
-        padding: rhythm(0.5) rhythm(0.5) 0;
+        padding: rhythm(0.5) rhythm(1) 0;
+
         &:last-child {
           margin-right: 0;
         }
+
         a {
           display: inline-block;
           white-space: nowrap;
@@ -41,6 +39,7 @@
           font-family: $nunito-sans-bold;
           transition: all 600ms ease-in-out;
         }
+
         a.active,
         a:hover {
           color: $active-link-color;
@@ -50,37 +49,5 @@
       }
     }
   }
-
-  // Styling for sticky state.
-  &.js-is-sticky,
-  &.js-is-stuck {
-    background: rgba(255,255,255,.97);
-    box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-  }
 }
 
-.navbar-horizontal {
-  .pane-node-field-submenu {
-    &.js-is-sticky,
-    &.js-is-stuck {
-      margin-top: 39px;
-    }
-  }
-  &.navbar-tray-open {
-    .pane-node-field-submenu {
-      &.js-is-sticky,
-      &.js-is-stuck {
-        margin-top: 79px;
-      }
-    }
-  }
-}
-
-body.submenu-is-sticky .js-stickybit-parent {
-  padding-top: 55px;
-}

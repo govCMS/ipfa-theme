@@ -3,7 +3,6 @@
   &[class*="view-layout--"] {
     .view-content {
       @include bp-nq($medium) {
-        -js-display: flex;
         display: flex;
         flex-wrap: wrap;
         margin: 0 -#{$zen-gutter-width};

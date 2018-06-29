@@ -2,7 +2,6 @@
   @include view-mode();
   @extend %flow-body;
   @include card();
-  -js-display: flex;
   display: flex;
   flex-direction: column;
   @include bp-nq($medium) {
@@ -42,7 +41,6 @@
   }
   .group-right {
     width: auto;
-    -js-display: flex;
     display: flex;
     flex-direction: column;
     flex: 1;

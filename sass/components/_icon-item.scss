@@ -1,6 +1,5 @@
 // Used by user in WYSIWYG.
 #content .icon-item {
-  -js-display: flex;
   display: flex;
   flex-grow: 1;
   justify-content: center;
@@ -10,7 +9,6 @@
   }
   // Layout.
   & > * {
-    -js-display: flex;
     display: flex;
     flex-direction: column;
     justify-content: center;
