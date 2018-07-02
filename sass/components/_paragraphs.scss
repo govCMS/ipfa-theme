@@ -41,19 +41,16 @@
 
   @include bp-nq($small) {
     background-position-x: 94%;
-    background-position-y: bottom;
+    background-position-y: center;
     background-size: 40%;
-    padding: rhythm(4) 25% rhythm(4) $zen-gutter-width;
+    padding: rhythm(4) 35% rhythm(4) $zen-gutter-width;
   }
 
   @include bp-nq($medium) {
-    background-position-y: bottom;
-    background-size: 55%;
     padding: rhythm(4) 45% rhythm(4) $zen-gutter-width;
-
   }
   @include bp-nq($large) {
-    background-position-y: top;
+    background-size: 40%;
   }
 }
 

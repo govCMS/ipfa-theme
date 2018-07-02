@@ -3871,7 +3871,7 @@ form#sweaver-frontend > div {
 }
 
 #main .entity-paragraphs-item.cp-feature-left > .content {
-  background: url('../images/feature-left-bg.png?1529346048') no-repeat;
+  background: url('../images/feature-left-bg.png?1530548170') no-repeat;
   background-position-x: center;
   background-position-y: bottom;
   background-size: 96%;
@@ -3880,36 +3880,32 @@ form#sweaver-frontend > div {
 @media (min-width: 600px) {
   #main .entity-paragraphs-item.cp-feature-left > .content {
     background-position-x: 94%;
-    background-position-y: bottom;
+    background-position-y: center;
     background-size: 40%;
-    padding: 5.6em 25% 5.6em 40px;
+    padding: 5.6em 35% 5.6em 40px;
   }
 }
 .lt-ie9 #main .entity-paragraphs-item.cp-feature-left > .content {
   background-position-x: 94%;
-  background-position-y: bottom;
+  background-position-y: center;
   background-size: 40%;
-  padding: 5.6em 25% 5.6em 40px;
+  padding: 5.6em 35% 5.6em 40px;
 }
 @media (min-width: 800px) {
   #main .entity-paragraphs-item.cp-feature-left > .content {
-    background-position-y: bottom;
-    background-size: 55%;
     padding: 5.6em 45% 5.6em 40px;
   }
 }
 .lt-ie9 #main .entity-paragraphs-item.cp-feature-left > .content {
-  background-position-y: bottom;
-  background-size: 55%;
   padding: 5.6em 45% 5.6em 40px;
 }
 @media (min-width: 1200px) {
   #main .entity-paragraphs-item.cp-feature-left > .content {
-    background-position-y: top;
+    background-size: 40%;
   }
 }
 .lt-ie9 #main .entity-paragraphs-item.cp-feature-left > .content {
-  background-position-y: top;
+  background-size: 40%;
 }
 
 #main .entity-paragraphs-item.cp-feature-right > .content {
