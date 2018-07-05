@@ -35,12 +35,12 @@ a.button.cta:hover {
   text-decoration: none;
   text-transform: uppercase;
   padding-left: 15px;
-  background: url('../images/icons/info-arrow.svg?1529257644');
+  background: url('../images/icons/info-arrow.svg?1530110428');
   background-repeat: no-repeat;
   background-position: 0 48%;
   background-size: 6px auto;
   padding: 10px 0 10px 28px                   !important;
-  background: url('../images/icons/linkedin.svg?1529339394') !important;
+  background: url('../images/icons/linkedin.svg?1530110428') !important;
   background-repeat: no-repeat                !important;
   background-position: 0 46%                  !important;
   background-size: 20px auto                  !important;
@@ -517,12 +517,12 @@ a.button.cta:hover {
   text-decoration: none;
   text-transform: uppercase;
   padding-left: 15px;
-  background: url('../images/icons/info-arrow.svg?1529257644');
+  background: url('../images/icons/info-arrow.svg?1530110428');
   background-repeat: no-repeat;
   background-position: 0 48%;
   background-size: 6px auto;
   padding: 10px 0 10px 28px                   !important;
-  background: url('../images/icons/linkedin.svg?1529339394') !important;
+  background: url('../images/icons/linkedin.svg?1530110428') !important;
   background-repeat: no-repeat                !important;
   background-position: 0 46%                  !important;
   background-size: 20px auto                  !important;
@@ -1230,12 +1230,12 @@ a.button.cta:hover {
   text-decoration: none;
   text-transform: uppercase;
   padding-left: 15px;
-  background: url('../images/icons/info-arrow.svg?1529257644');
+  background: url('../images/icons/info-arrow.svg?1530110428');
   background-repeat: no-repeat;
   background-position: 0 48%;
   background-size: 6px auto;
   padding: 10px 0 10px 28px                   !important;
-  background: url('../images/icons/linkedin.svg?1529339394') !important;
+  background: url('../images/icons/linkedin.svg?1530110428') !important;
   background-repeat: no-repeat                !important;
   background-position: 0 46%                  !important;
   background-size: 20px auto                  !important;
@@ -2063,6 +2063,18 @@ h6 {
   color: #eb1e55;
 }
 
+.text-align-left {
+  text-align: left;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
 /* HTML element (SMACSS base) rules */
 /* normalize.css v2.1.0 | MIT License | git.io/normalize */
 /* normalize.scss v2.1.0 | MIT/GPLv2 License | bit.ly/normalize-with-compass */
@@ -2602,7 +2614,7 @@ h3:hover a.anchor {
   z-index: 1000;
 }
 #back-to-top .back-to-top__link:before {
-  background: url('../images/back-to-top-arrow.svg?1530041016');
+  background: url('../images/back-to-top-arrow.svg?1530110428');
   content: "";
   float: right;
   height: 14px;
@@ -2796,7 +2808,7 @@ h3:hover a.anchor {
   text-decoration: none;
   text-transform: uppercase;
   padding-left: 15px;
-  background: url('../images/icons/info-arrow.svg?1529257644');
+  background: url('../images/icons/info-arrow.svg?1530110428');
   background-repeat: no-repeat;
   background-position: 0 48%;
   background-size: 6px auto;
@@ -2916,7 +2928,7 @@ h3:hover a.anchor {
   text-decoration: none;
   text-transform: uppercase;
   padding-left: 15px;
-  background: url('../images/icons/info-arrow.svg?1529257644');
+  background: url('../images/icons/info-arrow.svg?1530110428');
   background-repeat: no-repeat;
   background-position: 0 48%;
   background-size: 6px auto;
@@ -2929,7 +2941,7 @@ h3:hover a.anchor {
 }
 .view-mode-card .field-name-field-social-linkedin a {
   padding: 10px 0 10px 28px                   !important;
-  background: url('../images/icons/linkedin.svg?1529339394') !important;
+  background: url('../images/icons/linkedin.svg?1530110428') !important;
   background-repeat: no-repeat                !important;
   background-position: 0 46%                  !important;
   background-size: 20px auto                  !important;
@@ -3769,7 +3781,7 @@ tr.selected td {
 }
 .progress .filled {
   background-color: #0072b9;
-  background-image: url('../images/progress.gif?1527869127');
+  background-image: url('../images/progress.gif?1530110428');
 }
 
 #region-content .content ul li {
@@ -3909,7 +3921,7 @@ form#sweaver-frontend > div {
 }
 
 #main .entity-paragraphs-item.cp-feature-right > .content {
-  background: url('../images/feature-right-bg.png?1529346028') no-repeat;
+  background: url('../images/feature-right-bg.png?1530110428') no-repeat;
   background-position-x: center;
   background-position-y: bottom;
   background-size: 96%;
@@ -3961,7 +3973,7 @@ form#sweaver-frontend > div {
   letter-spacing: 0.125em;
   margin-top: 40px;
   padding-left: 20px;
-  background: url('../images/icons/cta-arrow.svg?1529257644');
+  background: url('../images/icons/cta-arrow.svg?1530110428');
   background-repeat: no-repeat;
   background-position: 0 50%;
   background-size: 8px auto;
@@ -4057,7 +4069,7 @@ form#sweaver-frontend > div {
   position: absolute;
   right: 0px;
   text-indent: -100px;
-  background: url('../images/search-btn-mobile.png?1527869127') 50% 50% no-repeat;
+  background: url('../images/search-btn-mobile.png?1530110428') 50% 50% no-repeat;
   background-color: #1b1b1b;
   width: 32px;
   font-weight: bold;
@@ -5101,7 +5113,7 @@ optgroup::-moz-focus-inner {
   border-top: none;
 }
 #comments .comment {
-  background-image: url('../images/comment-icon.png?1527869127');
+  background-image: url('../images/comment-icon.png?1530110428');
   background-position: 13px 15px;
   background-repeat: no-repeat;
   background-color: #f3f3f3;
@@ -5158,7 +5170,7 @@ optgroup::-moz-focus-inner {
 .footer .footer__inner {
   margin: 0 auto;
   overflow: hidden;
-  background: url('../images/triangle-footer-red.svg?1529359592') no-repeat bottom left, url('../images/triangle-footer-blue.svg?1529359552') repeat-x bottom left;
+  background: url('../images/triangle-footer-red.svg?1530110428') no-repeat bottom left, url('../images/triangle-footer-blue.svg?1530110428') repeat-x bottom left;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding: 1em 40px 2em;
   padding: 1em 20px 2em;
@@ -5936,7 +5948,7 @@ footer > .block-menu {
   text-align: left;
   text-indent: -100px;
   padding: 5px 14px;
-  background: url('../images/featured-articles-pause.png?1527869127') no-repeat 0px -27px;
+  background: url('../images/featured-articles-pause.png?1530110428') no-repeat 0px -27px;
 }
 .rslides_tabs li a.pause.paused {
   background-position: 0px 0px;
