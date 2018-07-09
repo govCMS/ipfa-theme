@@ -69,4 +69,4 @@
     pageOffset();
   });
 
-  })(jQuery, Drupal, this, this.document);
+})(jQuery, Drupal, this, this.document);
