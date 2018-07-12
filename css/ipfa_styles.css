@@ -35,12 +35,12 @@ a.button.cta:hover {
   text-decoration: none;
   text-transform: uppercase;
   padding-left: 15px;
-  background: url('../images/icons/info-arrow.svg?1530110428');
+  background: url('../images/icons/info-arrow.svg?1529045039');
   background-repeat: no-repeat;
   background-position: 0 48%;
   background-size: 6px auto;
   padding: 10px 0 10px 28px                   !important;
-  background: url('../images/icons/linkedin.svg?1530110428') !important;
+  background: url('../images/icons/linkedin.svg?1529284754') !important;
   background-repeat: no-repeat                !important;
   background-position: 0 46%                  !important;
   background-size: 20px auto                  !important;
@@ -517,12 +517,12 @@ a.button.cta:hover {
   text-decoration: none;
   text-transform: uppercase;
   padding-left: 15px;
-  background: url('../images/icons/info-arrow.svg?1530110428');
+  background: url('../images/icons/info-arrow.svg?1529045039');
   background-repeat: no-repeat;
   background-position: 0 48%;
   background-size: 6px auto;
   padding: 10px 0 10px 28px                   !important;
-  background: url('../images/icons/linkedin.svg?1530110428') !important;
+  background: url('../images/icons/linkedin.svg?1529284754') !important;
   background-repeat: no-repeat                !important;
   background-position: 0 46%                  !important;
   background-size: 20px auto                  !important;
@@ -1230,12 +1230,12 @@ a.button.cta:hover {
   text-decoration: none;
   text-transform: uppercase;
   padding-left: 15px;
-  background: url('../images/icons/info-arrow.svg?1530110428');
+  background: url('../images/icons/info-arrow.svg?1529045039');
   background-repeat: no-repeat;
   background-position: 0 48%;
   background-size: 6px auto;
   padding: 10px 0 10px 28px                   !important;
-  background: url('../images/icons/linkedin.svg?1530110428') !important;
+  background: url('../images/icons/linkedin.svg?1529284754') !important;
   background-repeat: no-repeat                !important;
   background-position: 0 46%                  !important;
   background-size: 20px auto                  !important;
@@ -1928,11 +1928,11 @@ h6 {
   padding: 0.7em;
 }
 .view-mode-business_card .field-name-field-subtitle, .view-mode-card .field-name-field-subtitle, .view-mode-compact .field-name-field-subtitle, .view-mode-stack .field-name-field-subtitle, .view-mode-title .field-name-field-subtitle,
-.view-mode-business_card .field-name-field-event-date,
-.view-mode-card .field-name-field-event-date,
-.view-mode-compact .field-name-field-event-date,
-.view-mode-stack .field-name-field-event-date,
-.view-mode-title .field-name-field-event-date,
+.view-mode-business_card .date-display-single,
+.view-mode-card .date-display-single,
+.view-mode-compact .date-display-single,
+.view-mode-stack .date-display-single,
+.view-mode-title .date-display-single,
 .view-mode-business_card .field-name-post-date,
 .view-mode-card .field-name-post-date,
 .view-mode-compact .field-name-post-date,
@@ -1942,7 +1942,12 @@ h6 {
 .view-mode-card .field-name-field-news-date,
 .view-mode-compact .field-name-field-news-date,
 .view-mode-stack .field-name-field-news-date,
-.view-mode-title .field-name-field-news-date {
+.view-mode-title .field-name-field-news-date,
+.view-mode-business_card .field-name-field-event-date,
+.view-mode-card .field-name-field-event-date,
+.view-mode-compact .field-name-field-event-date,
+.view-mode-stack .field-name-field-event-date,
+.view-mode-title .field-name-field-event-date {
   padding: 0 0.7em;
 }
 
@@ -1974,6 +1979,7 @@ h6 {
 .view-mode-default h3 a:hover, .view-mode-default h3 a:focus {
   text-decoration: underline;
 }
+.view-mode-default .date-display-single,
 .view-mode-default .field-name-post-date,
 .view-mode-default .field-name-field-news-date,
 .view-mode-default .field-name-field-event-date {
@@ -2614,7 +2620,7 @@ h3:hover a.anchor {
   z-index: 1000;
 }
 #back-to-top .back-to-top__link:before {
-  background: url('../images/back-to-top-arrow.svg?1530110428');
+  background: url('../images/back-to-top-arrow.svg?1529969506');
   content: "";
   float: right;
   height: 14px;
@@ -2760,6 +2766,7 @@ h3:hover a.anchor {
 .view-mode-business_card h3 a:hover, .view-mode-business_card h3 a:focus {
   text-decoration: underline;
 }
+.view-mode-business_card .date-display-single,
 .view-mode-business_card .field-name-post-date,
 .view-mode-business_card .field-name-field-news-date,
 .view-mode-business_card .field-name-field-event-date {
@@ -2808,7 +2815,7 @@ h3:hover a.anchor {
   text-decoration: none;
   text-transform: uppercase;
   padding-left: 15px;
-  background: url('../images/icons/info-arrow.svg?1530110428');
+  background: url('../images/icons/info-arrow.svg?1529045039');
   background-repeat: no-repeat;
   background-position: 0 48%;
   background-size: 6px auto;
@@ -2887,6 +2894,7 @@ h3:hover a.anchor {
 .view-mode-card h3 a:hover, .view-mode-card h3 a:focus {
   text-decoration: underline;
 }
+.view-mode-card .date-display-single,
 .view-mode-card .field-name-post-date,
 .view-mode-card .field-name-field-news-date,
 .view-mode-card .field-name-field-event-date {
@@ -2928,7 +2936,7 @@ h3:hover a.anchor {
   text-decoration: none;
   text-transform: uppercase;
   padding-left: 15px;
-  background: url('../images/icons/info-arrow.svg?1530110428');
+  background: url('../images/icons/info-arrow.svg?1529045039');
   background-repeat: no-repeat;
   background-position: 0 48%;
   background-size: 6px auto;
@@ -2941,7 +2949,7 @@ h3:hover a.anchor {
 }
 .view-mode-card .field-name-field-social-linkedin a {
   padding: 10px 0 10px 28px                   !important;
-  background: url('../images/icons/linkedin.svg?1530110428') !important;
+  background: url('../images/icons/linkedin.svg?1529284754') !important;
   background-repeat: no-repeat                !important;
   background-position: 0 46%                  !important;
   background-size: 20px auto                  !important;
@@ -3076,6 +3084,7 @@ h3:hover a.anchor {
 .view-mode-compact h3 a:hover, .view-mode-compact h3 a:focus {
   text-decoration: underline;
 }
+.view-mode-compact .date-display-single,
 .view-mode-compact .field-name-post-date,
 .view-mode-compact .field-name-field-news-date,
 .view-mode-compact .field-name-field-event-date {
@@ -3781,7 +3790,7 @@ tr.selected td {
 }
 .progress .filled {
   background-color: #0072b9;
-  background-image: url('../images/progress.gif?1530110428');
+  background-image: url('../images/progress.gif?1528180473');
 }
 
 #region-content .content ul li {
@@ -3883,7 +3892,7 @@ form#sweaver-frontend > div {
 }
 
 #main .entity-paragraphs-item.cp-feature-left > .content {
-  background: url('../images/feature-left-bg.png?1530548170') no-repeat;
+  background: url('../images/feature-left-bg.png?1531107261') no-repeat;
   background-position-x: center;
   background-position-y: bottom;
   background-size: 96%;
@@ -3921,7 +3930,7 @@ form#sweaver-frontend > div {
 }
 
 #main .entity-paragraphs-item.cp-feature-right > .content {
-  background: url('../images/feature-right-bg.png?1530110428') no-repeat;
+  background: url('../images/feature-right-bg.png?1529368130') no-repeat;
   background-position-x: center;
   background-position-y: bottom;
   background-size: 96%;
@@ -3973,7 +3982,7 @@ form#sweaver-frontend > div {
   letter-spacing: 0.125em;
   margin-top: 40px;
   padding-left: 20px;
-  background: url('../images/icons/cta-arrow.svg?1530110428');
+  background: url('../images/icons/cta-arrow.svg?1529029007');
   background-repeat: no-repeat;
   background-position: 0 50%;
   background-size: 8px auto;
@@ -4069,7 +4078,7 @@ form#sweaver-frontend > div {
   position: absolute;
   right: 0px;
   text-indent: -100px;
-  background: url('../images/search-btn-mobile.png?1530110428') 50% 50% no-repeat;
+  background: url('../images/search-btn-mobile.png?1528180473') 50% 50% no-repeat;
   background-color: #1b1b1b;
   width: 32px;
   font-weight: bold;
@@ -4139,6 +4148,7 @@ form#sweaver-frontend > div {
 .view-mode-stack h3 a:hover, .view-mode-stack h3 a:focus {
   text-decoration: underline;
 }
+.view-mode-stack .date-display-single,
 .view-mode-stack .field-name-post-date,
 .view-mode-stack .field-name-field-news-date,
 .view-mode-stack .field-name-field-event-date {
@@ -4172,6 +4182,7 @@ form#sweaver-frontend > div {
 .lt-ie9 .view-mode-stack .field-name-field-bean-text {
   display: none;
 }
+.view-mode-stack .date-display-single,
 .view-mode-stack .field-name-post-date,
 .view-mode-stack .field-name-field-event-date {
   padding: 1.4em 30px 0 30px;
@@ -4432,9 +4443,11 @@ form#sweaver-frontend > div {
 .node-teaser h3 a:focus {
   text-decoration: underline;
 }
+.view-mode-teaser .date-display-single,
 .view-mode-teaser .field-name-post-date,
 .view-mode-teaser .field-name-field-news-date,
 .view-mode-teaser .field-name-field-event-date,
+.node-teaser .date-display-single,
 .node-teaser .field-name-post-date,
 .node-teaser .field-name-field-news-date,
 .node-teaser .field-name-field-event-date {
@@ -4535,6 +4548,7 @@ body.large-fonts .text-resize .font-small:before {
 .view-mode-widetile h3 a:hover, .view-mode-widetile h3 a:focus {
   text-decoration: underline;
 }
+.view-mode-widetile .date-display-single,
 .view-mode-widetile .field-name-post-date,
 .view-mode-widetile .field-name-field-news-date,
 .view-mode-widetile .field-name-field-event-date {
@@ -4680,6 +4694,7 @@ body.large-fonts .text-resize .font-small:before {
 .view-mode-tile h3 a:hover, .view-mode-tile h3 a:focus {
   text-decoration: underline;
 }
+.view-mode-tile .date-display-single,
 .view-mode-tile .field-name-post-date,
 .view-mode-tile .field-name-field-news-date,
 .view-mode-tile .field-name-field-event-date {
@@ -4800,6 +4815,7 @@ body.large-fonts .text-resize .font-small:before {
 .view-mode-title h3 a:hover, .view-mode-title h3 a:focus {
   text-decoration: underline;
 }
+.view-mode-title .date-display-single,
 .view-mode-title .field-name-post-date,
 .view-mode-title .field-name-field-news-date,
 .view-mode-title .field-name-field-event-date {
@@ -5113,7 +5129,7 @@ optgroup::-moz-focus-inner {
   border-top: none;
 }
 #comments .comment {
-  background-image: url('../images/comment-icon.png?1530110428');
+  background-image: url('../images/comment-icon.png?1528180473');
   background-position: 13px 15px;
   background-repeat: no-repeat;
   background-color: #f3f3f3;
@@ -5170,7 +5186,7 @@ optgroup::-moz-focus-inner {
 .footer .footer__inner {
   margin: 0 auto;
   overflow: hidden;
-  background: url('../images/triangle-footer-red.svg?1530110428') no-repeat bottom left, url('../images/triangle-footer-blue.svg?1530110428') repeat-x bottom left;
+  background: url('../images/triangle-footer-red.svg?1529368130') no-repeat bottom left, url('../images/triangle-footer-blue.svg?1529368130') repeat-x bottom left;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding: 1em 40px 2em;
   padding: 1em 20px 2em;
@@ -5948,7 +5964,7 @@ footer > .block-menu {
   text-align: left;
   text-indent: -100px;
   padding: 5px 14px;
-  background: url('../images/featured-articles-pause.png?1530110428') no-repeat 0px -27px;
+  background: url('../images/featured-articles-pause.png?1528180473') no-repeat 0px -27px;
 }
 .rslides_tabs li a.pause.paused {
   background-position: 0px 0px;

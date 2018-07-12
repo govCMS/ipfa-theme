@@ -30,6 +30,7 @@
     }
   }
   // Date.
+  .date-display-single,
   .field-name-post-date,
   .field-name-field-news-date,
   .field-name-field-event-date {
@@ -102,9 +103,10 @@
     padding: rhythm(0.5);
   }
   .field-name-field-subtitle,
-  .field-name-field-event-date,
+  .date-display-single,
   .field-name-post-date,
-  .field-name-field-news-date {
+  .field-name-field-news-date,
+  .field-name-field-event-date {
     padding: 0 rhythm(0.5);
   }
 }
