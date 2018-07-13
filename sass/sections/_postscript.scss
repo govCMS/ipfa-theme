@@ -3,7 +3,6 @@
   background: $color-primary;
   color: $color-primary-contrast;
   padding: 3em 0;
-
   .region-postscript {
     padding: 0 $zen-gutter-width/2;
     @include bp-nq($medium) {
@@ -19,7 +18,6 @@
           color: $color-primary-contrast;
           display: block;
           text-decoration: none;
-
           &:hover {
             text-decoration: underline;
           }
@@ -31,35 +29,33 @@
       display: flex;
       flex-wrap: wrap;
     }
-
     & > ul > li {
       flex-basis: auto;
       flex-grow: 1;
-      margin-bottom: rhythm(2.5);
       width: 100%;
-
+      margin-bottom: rhythm(1.5);
       @include bp-nq($small) {
         width: calc(100/2 * 1%);
       }
-
       @include bp-nq($medium) {
         width: calc(100/3 * 1%);
       }
-
       @include bp-nq($large) {
         width: auto;
+        margin-bottom: 0;
       }
-
       & > a {
         font-size: 0.9em;
         font-weight: bold;
-        margin-bottom: rhythm(1.5);
+        margin-bottom: rhythm(.5);
         text-transform: uppercase;
+        @include bp-nq($large) {
+          margin-bottom: rhythm(1.5);
+        }
       }
     }
     // Second level.
     & > ul > li > ul > li {
-
       & > a {
         padding: 0.4em 0;
       }

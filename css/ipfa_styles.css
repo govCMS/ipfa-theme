@@ -5835,8 +5835,8 @@ footer > .block-menu {
       flex-basis: auto;
   -ms-flex-positive: 1;
       flex-grow: 1;
-  margin-bottom: 3.5em;
   width: 100%;
+  margin-bottom: 2.1em;
 }
 @media (min-width: 600px) {
   .postscript .menu-name-main-menu > ul > li {
@@ -5857,16 +5857,26 @@ footer > .block-menu {
 @media (min-width: 1200px) {
   .postscript .menu-name-main-menu > ul > li {
     width: auto;
+    margin-bottom: 0;
   }
 }
 .lt-ie9 .postscript .menu-name-main-menu > ul > li {
   width: auto;
+  margin-bottom: 0;
 }
 .postscript .menu-name-main-menu > ul > li > a {
   font-size: 0.9em;
   font-weight: bold;
-  margin-bottom: 2.1em;
+  margin-bottom: 0.7em;
   text-transform: uppercase;
+}
+@media (min-width: 1200px) {
+  .postscript .menu-name-main-menu > ul > li > a {
+    margin-bottom: 2.1em;
+  }
+}
+.lt-ie9 .postscript .menu-name-main-menu > ul > li > a {
+  margin-bottom: 2.1em;
 }
 .postscript .menu-name-main-menu > ul > li > ul > li > a {
   padding: 0.4em 0;
