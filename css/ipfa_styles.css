@@ -1928,11 +1928,11 @@ h6 {
   padding: 0.7em;
 }
 .view-mode-business_card .field-name-field-subtitle, .view-mode-card .field-name-field-subtitle, .view-mode-compact .field-name-field-subtitle, .view-mode-stack .field-name-field-subtitle, .view-mode-title .field-name-field-subtitle,
-.view-mode-business_card .date-display-single,
-.view-mode-card .date-display-single,
-.view-mode-compact .date-display-single,
-.view-mode-stack .date-display-single,
-.view-mode-title .date-display-single,
+.view-mode-business_card .field-name-field-date,
+.view-mode-card .field-name-field-date,
+.view-mode-compact .field-name-field-date,
+.view-mode-stack .field-name-field-date,
+.view-mode-title .field-name-field-date,
 .view-mode-business_card .field-name-post-date,
 .view-mode-card .field-name-post-date,
 .view-mode-compact .field-name-post-date,
@@ -1979,7 +1979,7 @@ h6 {
 .view-mode-default h3 a:hover, .view-mode-default h3 a:focus {
   text-decoration: underline;
 }
-.view-mode-default .date-display-single,
+.view-mode-default .field-name-field-date,
 .view-mode-default .field-name-post-date,
 .view-mode-default .field-name-field-news-date,
 .view-mode-default .field-name-field-event-date {
@@ -2766,7 +2766,7 @@ h3:hover a.anchor {
 .view-mode-business_card h3 a:hover, .view-mode-business_card h3 a:focus {
   text-decoration: underline;
 }
-.view-mode-business_card .date-display-single,
+.view-mode-business_card .field-name-field-date,
 .view-mode-business_card .field-name-post-date,
 .view-mode-business_card .field-name-field-news-date,
 .view-mode-business_card .field-name-field-event-date {
@@ -2894,7 +2894,7 @@ h3:hover a.anchor {
 .view-mode-card h3 a:hover, .view-mode-card h3 a:focus {
   text-decoration: underline;
 }
-.view-mode-card .date-display-single,
+.view-mode-card .field-name-field-date,
 .view-mode-card .field-name-post-date,
 .view-mode-card .field-name-field-news-date,
 .view-mode-card .field-name-field-event-date {
@@ -3084,7 +3084,7 @@ h3:hover a.anchor {
 .view-mode-compact h3 a:hover, .view-mode-compact h3 a:focus {
   text-decoration: underline;
 }
-.view-mode-compact .date-display-single,
+.view-mode-compact .field-name-field-date,
 .view-mode-compact .field-name-post-date,
 .view-mode-compact .field-name-field-news-date,
 .view-mode-compact .field-name-field-event-date {
@@ -4148,7 +4148,7 @@ form#sweaver-frontend > div {
 .view-mode-stack h3 a:hover, .view-mode-stack h3 a:focus {
   text-decoration: underline;
 }
-.view-mode-stack .date-display-single,
+.view-mode-stack .field-name-field-date,
 .view-mode-stack .field-name-post-date,
 .view-mode-stack .field-name-field-news-date,
 .view-mode-stack .field-name-field-event-date {
@@ -4182,7 +4182,7 @@ form#sweaver-frontend > div {
 .lt-ie9 .view-mode-stack .field-name-field-bean-text {
   display: none;
 }
-.view-mode-stack .date-display-single,
+.view-mode-stack .field-name-field-date,
 .view-mode-stack .field-name-post-date,
 .view-mode-stack .field-name-field-event-date {
   padding: 1.4em 30px 0 30px;
@@ -4443,11 +4443,11 @@ form#sweaver-frontend > div {
 .node-teaser h3 a:focus {
   text-decoration: underline;
 }
-.view-mode-teaser .date-display-single,
+.view-mode-teaser .field-name-field-date,
 .view-mode-teaser .field-name-post-date,
 .view-mode-teaser .field-name-field-news-date,
 .view-mode-teaser .field-name-field-event-date,
-.node-teaser .date-display-single,
+.node-teaser .field-name-field-date,
 .node-teaser .field-name-post-date,
 .node-teaser .field-name-field-news-date,
 .node-teaser .field-name-field-event-date {
@@ -4548,7 +4548,7 @@ body.large-fonts .text-resize .font-small:before {
 .view-mode-widetile h3 a:hover, .view-mode-widetile h3 a:focus {
   text-decoration: underline;
 }
-.view-mode-widetile .date-display-single,
+.view-mode-widetile .field-name-field-date,
 .view-mode-widetile .field-name-post-date,
 .view-mode-widetile .field-name-field-news-date,
 .view-mode-widetile .field-name-field-event-date {
@@ -4694,7 +4694,7 @@ body.large-fonts .text-resize .font-small:before {
 .view-mode-tile h3 a:hover, .view-mode-tile h3 a:focus {
   text-decoration: underline;
 }
-.view-mode-tile .date-display-single,
+.view-mode-tile .field-name-field-date,
 .view-mode-tile .field-name-post-date,
 .view-mode-tile .field-name-field-news-date,
 .view-mode-tile .field-name-field-event-date {
@@ -4815,7 +4815,7 @@ body.large-fonts .text-resize .font-small:before {
 .view-mode-title h3 a:hover, .view-mode-title h3 a:focus {
   text-decoration: underline;
 }
-.view-mode-title .date-display-single,
+.view-mode-title .field-name-field-date,
 .view-mode-title .field-name-post-date,
 .view-mode-title .field-name-field-news-date,
 .view-mode-title .field-name-field-event-date {

@@ -1885,7 +1885,7 @@ h6 {
 .view-mode-default h3 a:hover, .view-mode-default h3 a:focus {
   text-decoration: underline;
 }
-.view-mode-default .date-display-single,
+.view-mode-default .field-name-field-date,
 .view-mode-default .field-name-post-date,
 .view-mode-default .field-name-field-news-date,
 .view-mode-default .field-name-field-event-date {
