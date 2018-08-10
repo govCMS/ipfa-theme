@@ -16,12 +16,12 @@
     padding-bottom: 0 !important;
   }
   // Front specific.
-  .front & {
+  .front &,
+  .page-node-121 & {
     p.lead-in {
       font-size: 26px;
       font-family: $heading-font;
       line-height: 1em;
-
       @include bp-nq($medium) {
         font-size: 55px;
       }
