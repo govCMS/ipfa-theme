@@ -20,6 +20,51 @@ a.button.cta:hover {
   background: #c51142;
 }
 
+a.button.secondary {
+  display: inline-block;
+  font-size: 0.95em;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+  background: #eb1e55;
+  display: inline-block;
+  padding: 10px 20px;
+  background: white;
+  color: #eb1e55;
+  padding: 8px 18px;
+  border: 2px solid #eb1e55;
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+  text-align: center;
+}
+a.button.secondary:hover {
+  background: #c51142;
+}
+a.button.secondary:hover {
+  color: white;
+  background: #eb1e55;
+}
+
+.button-nav {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.button-nav li {
+  list-style: none;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+.button-nav li,
+.button-nav a.button {
+  display: inline-block !important;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
 .field-name-field-social-linkedin a {
   display: block;
   padding: 5px 0 5px 0;
@@ -490,6 +535,51 @@ a.button.cta {
 }
 a.button.cta:hover {
   background: #c51142;
+}
+
+a.button.secondary {
+  display: inline-block;
+  font-size: 0.95em;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+  background: #eb1e55;
+  display: inline-block;
+  padding: 10px 20px;
+  background: white;
+  color: #eb1e55;
+  padding: 8px 18px;
+  border: 2px solid #eb1e55;
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+  text-align: center;
+}
+a.button.secondary:hover {
+  background: #c51142;
+}
+a.button.secondary:hover {
+  color: white;
+  background: #eb1e55;
+}
+
+.button-nav {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.button-nav li {
+  list-style: none;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+.button-nav li,
+.button-nav a.button {
+  display: inline-block !important;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 .field-name-field-social-linkedin a {
@@ -1193,6 +1283,51 @@ a.button.cta {
 }
 a.button.cta:hover {
   background: #c51142;
+}
+
+a.button.secondary {
+  display: inline-block;
+  font-size: 0.95em;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.075em;
+  background: #eb1e55;
+  display: inline-block;
+  padding: 10px 20px;
+  background: white;
+  color: #eb1e55;
+  padding: 8px 18px;
+  border: 2px solid #eb1e55;
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+  text-align: center;
+}
+a.button.secondary:hover {
+  background: #c51142;
+}
+a.button.secondary:hover {
+  color: white;
+  background: #eb1e55;
+}
+
+.button-nav {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.button-nav li {
+  list-style: none;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+.button-nav li,
+.button-nav a.button {
+  display: inline-block !important;
+  padding-right: 30px;
+  padding-left: 30px;
 }
 
 .field-name-field-social-linkedin a {

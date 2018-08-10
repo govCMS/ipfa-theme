@@ -51,6 +51,39 @@ a.button.cta {
   max-width: 300px;
   text-align: center;
 }
+a.button.secondary {
+  @include cta-button();
+  background: white;
+  color: $color-primary-active;
+  padding: 8px 18px;
+  border: 2px solid $color-primary-active;
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+  text-align: center;
+  &:hover {
+    color: white;
+    background: $color-primary-active;
+  }
+}
+
+// Button nav.
+.button-nav {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  li {
+    list-style: none;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+  li,
+  a.button {
+    display: inline-block !important;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
 
 // LinkedIn. ("!important" needed to override ":not" selector in Business Card)
 .field-name-field-social-linkedin a {
