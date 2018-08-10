@@ -72,14 +72,17 @@ a.button.secondary {
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
+  // Inline layout.
+  li,
+  a.button {
+    display: inline-block !important;
+  }
   li {
     list-style: none;
     margin-right: 20px;
     margin-bottom: 10px;
   }
-  li,
   a.button {
-    display: inline-block !important;
     padding-right: 30px;
     padding-left: 30px;
   }

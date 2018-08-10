@@ -60,14 +60,16 @@ a.button.secondary:hover {
   margin-top: 0;
   margin-bottom: 0;
 }
+.button-nav li,
+.button-nav a.button {
+  display: inline-block !important;
+}
 .button-nav li {
   list-style: none;
   margin-right: 20px;
   margin-bottom: 10px;
 }
-.button-nav li,
 .button-nav a.button {
-  display: inline-block !important;
   padding-right: 30px;
   padding-left: 30px;
 }
@@ -587,14 +589,16 @@ a.button.secondary:hover {
   margin-top: 0;
   margin-bottom: 0;
 }
+.button-nav li,
+.button-nav a.button {
+  display: inline-block !important;
+}
 .button-nav li {
   list-style: none;
   margin-right: 20px;
   margin-bottom: 10px;
 }
-.button-nav li,
 .button-nav a.button {
-  display: inline-block !important;
   padding-right: 30px;
   padding-left: 30px;
 }
@@ -1345,14 +1349,16 @@ a.button.secondary:hover {
   margin-top: 0;
   margin-bottom: 0;
 }
+.button-nav li,
+.button-nav a.button {
+  display: inline-block !important;
+}
 .button-nav li {
   list-style: none;
   margin-right: 20px;
   margin-bottom: 10px;
 }
-.button-nav li,
 .button-nav a.button {
-  display: inline-block !important;
   padding-right: 30px;
   padding-left: 30px;
 }
