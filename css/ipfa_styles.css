@@ -93,6 +93,29 @@ a.button.secondary:hover {
   background-size: 20px auto                  !important;
 }
 
+body:not(.edgy-page) #main {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+@media (min-width: 800px) {
+  body:not(.edgy-page) #main {
+    width: 100%;
+    max-width: 1440px;
+  }
+}
+.lt-ie9 body:not(.edgy-page) #main {
+  width: 100%;
+  max-width: 1440px;
+}
+@media (min-width: 800px) {
+  body:not(.edgy-page) #main {
+    padding: 0 40px;
+  }
+}
+.lt-ie9 body:not(.edgy-page) #main {
+  padding: 0 40px;
+}
+
 .gov-normal-layout:before, .gov-normal-layout:after {
   content: "";
   display: table;
@@ -830,6 +853,29 @@ header .search-form-widget input[type="text"] {
   width: 190px;
 }
 
+body:not(.edgy-page) #main {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+@media (min-width: 800px) {
+  body:not(.edgy-page) #main {
+    width: 100%;
+    max-width: 1440px;
+  }
+}
+.lt-ie9 body:not(.edgy-page) #main {
+  width: 100%;
+  max-width: 1440px;
+}
+@media (min-width: 800px) {
+  body:not(.edgy-page) #main {
+    padding: 0 40px;
+  }
+}
+.lt-ie9 body:not(.edgy-page) #main {
+  padding: 0 40px;
+}
+
 .gov-normal-layout:before, .gov-normal-layout:after {
   content: "";
   display: table;
@@ -1334,6 +1380,29 @@ a.button.secondary:hover {
   background-repeat: no-repeat                !important;
   background-position: 0 46%                  !important;
   background-size: 20px auto                  !important;
+}
+
+body:not(.edgy-page) #main {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+@media (min-width: 800px) {
+  body:not(.edgy-page) #main {
+    width: 100%;
+    max-width: 1440px;
+  }
+}
+.lt-ie9 body:not(.edgy-page) #main {
+  width: 100%;
+  max-width: 1440px;
+}
+@media (min-width: 800px) {
+  body:not(.edgy-page) #main {
+    padding: 0 40px;
+  }
+}
+.lt-ie9 body:not(.edgy-page) #main {
+  padding: 0 40px;
 }
 
 .gov-normal-layout:before, .gov-normal-layout:after {
